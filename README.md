@@ -9,3 +9,7 @@ FLASK_APP = main.py
 para abilitar el modo de debug
 
 FLASK_DEBUG = 1
+
+
+para iniciar flask usamos el comando 
+flask run 
