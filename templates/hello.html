@@ -3,11 +3,11 @@
 {% import 'macros.html' as macros %}
 
 {% block title %}
-    {{ super }}
-    Bienvenido 
+        {{ super() }}
+        Bienbenido
 {% endblock %}
 
-{% block contente %}
+{% block content %}
     {% if user_ip %}
     <h1>Hello World Platzi,  tu IP  es {{ user_ip }} </h1>
     {% else %}
