@@ -1,17 +1,21 @@
-
-<head>
+{% extends 'bootstrap/base.html' %}
+{% block head %}
     <title>
         {% block title %}
         Flask Tuto | 
         {% endblock %}
     </title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-</head>
-<body>
-    <header>
-        {% include 'navbar.html' %}
-    </header>
-    {% block content %}
+
+{% endblock %}
+
+{% block body %}
+    {% block navbar %}
+        {% include 'navbar.html'%}
     {% endblock %}
-</body>
-</html>
+
+    {% block content %}
+
+    {% endblock %}
+
+{% endblock %}
