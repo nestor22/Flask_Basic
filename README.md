@@ -13,3 +13,7 @@ FLASK_DEBUG = 1
 
 para iniciar flask usamos el comando 
 flask run 
+
+
+para iniciar el modo de developer usamos 
+FLASK_ENV=DEVELOPMENT
