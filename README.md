@@ -10,10 +10,10 @@ para abilitar el modo de debug
 
 FLASK_DEBUG = 1
 
-
 para iniciar flask usamos el comando 
 flask run 
 
-
 para iniciar el modo de developer usamos 
 FLASK_ENV=DEVELOPMENT
+
+para poder activar el modo de test se debe exportar 
