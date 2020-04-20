@@ -3,6 +3,8 @@ from flask_bootstrap import Bootstrap
 import unittest
 from app import craete_app
 from app.forms import LoginForm
+from app.firestore_service import get_users
+
 
 app = craete_app()
 
@@ -44,4 +46,7 @@ def hello():
         #'login_form':login_form,
         'username': username
     }
+    users = get_users()
+    for user in users:
+        print(user)
     return render_template('hello.html', **context)
